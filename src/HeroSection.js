@@ -5,7 +5,7 @@ function HeroSection() {
   return (
     <div className="hero-container">
       <div className="hero-image">
-        <img src="/images/sp4.jpg" alt="Profile" />
+        <img src={`${process.env.PUBLIC_URL}/images/sp4.jpg`} alt="Profile" />
       </div>
       <div className="hero-text">
         <h1>Hello, I'm Manav</h1>

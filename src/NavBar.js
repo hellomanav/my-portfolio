@@ -7,7 +7,7 @@ function NavBar() {
     <header className="navbar-container">
       <div className="navbar-logo">
         {/* Logo */}
-        <img src="/images/pf.png" alt="Logo" />
+        <img src={`${process.env.PUBLIC_URL}/images/pf.png`} alt="Logo" />
         <span>Portfolio</span>
       </div>
       <nav className="navbar-links">
