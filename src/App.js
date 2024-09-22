@@ -5,6 +5,7 @@ import Projects from './Projects';
 import Contact from './Contact';
 import NotFound from './NotFound';
 import HeroSection from './HeroSection';
+import Footer from './Footer';
 import Services from './Services';
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
                 <h1>Welcome to My Portfolio</h1>
                 <HeroSection />
                 <Services />
+                
               </>
             } 
           />
@@ -40,7 +42,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
-
+      <Footer/>
       <footer>
         <p>&copy; 2024 My Portfolio</p>
       </footer>
