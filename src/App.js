@@ -5,13 +5,15 @@ import Projects from './Projects';
 import Contact from './Contact';
 import NotFound from './NotFound';
 import HeroSection from './HeroSection';
+import NavBar from './NavBar';
 import Footer from './Footer';
 import Services from './Services';
 
 function App() {
   return (
     <Router>
-      <header>
+      <NavBar/>
+      {/* <header>
         <nav>
           <ul>
             <li><Link to="/">Home</Link></li>
@@ -20,7 +22,7 @@ function App() {
             <li><Link to="/contact">Contact</Link></li>
           </ul>
         </nav>
-      </header>
+      </header> */}
 
       <main>
         <Routes>

@@ -5,7 +5,7 @@ function Services() {
   return (
     <div className="services-container">
       <div className="service-card">
-        <img src="/images/uiux2.jpg" alt="UI/UX Design" />
+        <img src={`${process.env.PUBLIC_URL}/images/uiux2.jpg`} alt="UI/UX Design" />
         <h2>UI/UX Design</h2>
         <p>From the initial design to the final development stage, your dedicated team of specialists.</p>
       </div>
