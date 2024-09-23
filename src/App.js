@@ -89,9 +89,9 @@ function App() {
             path="/" 
             element={
               <>
-                <h1>Welcome to My Portfolio</h1>
+                {/* <h1>Welcome to My Portfolio</h1> */}
                 <HeroSection />
-                <AboutMeSection />
+                {/* <AboutMeSection /> */}
                 <SkillsSection />
                 <PortfolioSection />
                 {/* <PortfolioSection title="Cultures" items={cultureItems} dropdownItems={languagesDropdown} />
@@ -107,9 +107,9 @@ function App() {
         </Routes>
       </main>
       <Footer/>
-      <footer>
+      {/* <footer>
         <p>&copy; 2024 My Portfolio</p>
-      </footer>
+      </footer> */}
     </Router>
   );
 }
