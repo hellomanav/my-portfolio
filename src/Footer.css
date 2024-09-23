@@ -1,7 +1,9 @@
 .footer-container {
     display: flex;
     justify-content: space-between;
-    background-color: #009DAE;
+    /* Green Theme */
+    /* background-color: #009DAE; */
+    background-color: #6E07F3;
     color: white;
     padding: 50px;
     flex-wrap: wrap; /* Allows wrapping for smaller screens */
@@ -67,6 +69,7 @@
   .newsletter button {
     background-color: white;
     color: #009DAE;
+    /* color:#6E07F3; */
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -74,7 +77,9 @@
   }
   
   .newsletter button:hover {
+    
     background-color: #007a90;
+    /* background-color: #6E07F3; */
     color: white;
   }
   

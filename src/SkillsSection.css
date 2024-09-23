@@ -1,0 +1,107 @@
+.skills-section {
+    padding: 50px 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .skills-section h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #333;
+    font-size: 36px;
+    font-weight: 700;
+  }
+  
+  .skills-section .row {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
+  
+  .skills-section .col {
+    width: 30%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+    margin-right:20px;
+    backdrop-filter: blur(10px);
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .skills-section .col:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .skills-section h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    /* color: #fff; */
+    font-weight: 600;
+  }
+  
+  .skills-section ul {
+    list-style: none;
+    padding: 0;
+    /* color: #fff; */
+  }
+  
+  /* .skills-section li {
+    font-size: 18px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .skills-section li .fa {
+    margin-right: 10px;
+    font-size: 22px;
+    color: #00d1b2;
+  }
+  
+  .skills-section li:hover .fa {
+    color: #00ffcc;
+    transition: color 0.3s ease-in-out;
+  } */
+  
+  .skills-section ul {
+    list-style: none;
+    padding: 0;
+    /* color: #fff; */
+  }
+  
+  .skills-section li {
+    font-size: 18px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start; /* Align icon to the top */
+    flex-direction: row; /* Ensures the icon stays to the left */
+    text-align: left; /* Align text to the left */
+  }
+  
+  .skills-section li .fa {
+    margin-right: 10px;
+    font-size: 22px;
+    color: #00d1b2;
+    flex-shrink: 0; /* Prevent the icon from resizing */
+  }
+  
+  .skills-section li:hover .fa {
+    color: #00ffcc;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .skills-section li span {
+    text-align: left; /* Ensure text in span stays left aligned */
+    word-wrap: break-word; /* Handle long words or text wrapping */
+  }
+  

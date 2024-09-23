@@ -1,0 +1,87 @@
+.portfolio-section {
+    padding: 20px;
+    text-align: left;
+}
+.hobbies{
+    background-color:#CDE6F9;
+    font-weight: normal;
+}
+.academics{
+    background-color:#F0D1F6;
+    font-weight: normal;
+}
+.passion{
+    background-color:#CBECEE;
+    font-weight: normal;
+}
+.portfolio-section .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 15px;
+    border-right: 1px solid transparent;
+}
+
+.portfolio-section .col {
+    flex: 1;
+    min-width: 250px;
+    padding: 10px;
+    margin-right:5px;
+    box-sizing: border-box;
+    /*border-right: 1px solid #ddd; /* Vertical line between columns */
+}
+
+.portfolio-section .col:last-child {
+    border-right: none; /* Remove the right border from the last column */
+}
+
+.portfolio-section h3 {
+    font-size: 24px;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    /* background-color: #f0f0f0;  */
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid #DFDFDF; /* Underline heading */
+}
+
+.portfolio-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.portfolio-section ul li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.portfolio-section ul li svg {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.portfolio-section .dropdown-content {
+    margin-left: 20px;
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #555; /* Make the dropdown items stand out */
+}
+
+.portfolio-section p {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.portfolio-section p svg {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .portfolio-section .row {
+        flex-direction: column;
+    }
+}

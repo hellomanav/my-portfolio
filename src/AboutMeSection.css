@@ -1,0 +1,25 @@
+.about-me-section {
+    background-color: #8000FF; /* Purple background */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .about-me-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .about-me-txt {
+    color:#fff;
+  }
+  .about-me-content h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .about-me-content p {
+    font-size: 1.25rem;
+    line-height: 1.8;
+  }
+  
