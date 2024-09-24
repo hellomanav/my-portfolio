@@ -1,28 +1,24 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
 import './NavBar.css';
 
 function NavBar() {
+  const [activeLink, setActiveLink] = useState('#');
+
+  const handleClick = (link) => {
+    setActiveLink(link);
+  };
+
   return (
-    <header className="navbar-container">
-      <div className="navbar-logo">
-        {/* Logo */}
-        <img src={`${process.env.PUBLIC_URL}/images/webdp1.png`} alt="Logo" />
-        <span>Portfolio</span>
-      </div>
-      <nav className="navbar-links">
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About us</Link></li>
-          <li><Link to="/services">Services</Link></li>
-          <li><Link to="/portfolio">Portfolio</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
-        </ul>
-      </nav>
-      <div className="navbar-button">
-        <button>Let's talk</button>
-      </div>
-    </header>
+    <nav className="navbar">
+      <div className="logo">Manav</div>
+      <ul className="nav-links">
+        <li><a href="#" className={activeLink === '#' ? 'active' : ''} onClick={() => handleClick('#')}>Home</a></li>
+        <li><a href="#about" className={activeLink === '#about' ? 'active' : ''} onClick={() => handleClick('#about')}>About</a></li>
+        <li><a href="#skills" className={activeLink === '#skills' ? 'active' : ''} onClick={() => handleClick('#skills')}>Skills</a></li>
+        <li><a href="#projects" className={activeLink === '#projects' ? 'active' : ''} onClick={() => handleClick('#projects')}>Projects</a></li>
+        <li><a href="#blog" className={activeLink === '#blog' ? 'active' : ''} onClick={() => handleClick('#blog')}>Blog</a></li>
+      </ul>
+    </nav>
   );
 }
 
