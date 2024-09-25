@@ -12,6 +12,7 @@ import AboutMeSection from './AboutMeSection';
 import Footer from './Footer';
 import Services from './Services';
 import SkillsSection from './SkillsSection';
+import Chatbot from './Chatbot';
 import PortfolioSection from './PortfolioSection';
 import { FaBook, FaCode, FaCloud, FaHeart, FaLanguage } from 'react-icons/fa';
 
@@ -96,7 +97,8 @@ function App() {
                 <PortfolioSection />
                 {/* <PortfolioSection title="Cultures" items={cultureItems} dropdownItems={languagesDropdown} />
                 <PortfolioSection title="Technologies" items={[]} dropdownItems={technologiesDropdown} /> */}
-                <Services />              
+                <Services />
+                <Chatbot/>              
               </>
             } 
           />
